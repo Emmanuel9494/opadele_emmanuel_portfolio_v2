@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="images/icon-logo-fav.svg"  rel="icon" type="image/svg+xml">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <title>E. O Opadele</title>
+</head>
+
+
+<body>
+    <h1 class="hidden">Welcome to Emmanuel Opadele's Intro Portfolio Page</h1>
+   
+    <section id="intro-page" class="full-width-grid-con">
+        <h2 class="hidden">Introduction Page Of Emmanuel's Portfolio</h2>
+        <div class="video-bg col-span-full">
+            <video class="bg-vid" autoplay loop muted preload="metadata" >
+                <source src="videos/bg-color.mp4" type="video/mp4">
+                <source src="videos/bg-color.webm" type="video/webm">
+            </video>
+        </div>
+        <div id="black-container"></div>
+       
+        <div id="intro-content" class="grid-con l-col-span-full ">
+            <picture class="col-span-full">
+                <source srcset="images/dsk-intro-letter.svg" media="(min-width: 1280px)">
+                <source srcset="images/tb-intro-letter.svg"  media="(min-width: 768px)">
+                <source srcset="images/mb-intro-letter.svg" >
+                <!-- Fallback for browsers that do not support <picture> -->
+                <img src="images/mb-intro-letter.svg" alt="Responsive image">
+            </picture>
+
+            
+            <div  id="intro-text" class="col-span-full">
+                <div id="intro-names">
+                    <h2 class="first-name">Emmanuel</h2>
+                    <h2 class="last-name">Opadele</h2>
+                </div>
+                <h3 class="text"><span class="blinkCursor">_</span></h3>
+                <div id="intro-click">
+                    <img src="images/click-bracket-left.svg" alt="bracket icon">
+                    <p id="cta-blink"><a href="index.html">Click <span>To</span> Enter</a></p>
+                    <img src="images/click-bracket-right.svg" alt="bracket icon">
+                </div>
+            </div>
+        </div>
+       
+    </section>
+
+
+    <!-- Script Start-->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+        <script src="js/main.js"></script> 
+    <!-- Script End -->
+    
+</body>
+</html>
