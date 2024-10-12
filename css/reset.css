@@ -8,7 +8,6 @@ img, embed, object, video, picture, svg {
   
   html {
     box-sizing: border-box; 
-    background-color: white;
   }
   
   *, *::before, *::after {
