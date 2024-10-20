@@ -16,7 +16,7 @@
     <h1 class="hidden">Welcome to Emmanuel Opadele's Portfolio</h1>
     
     <div id="top-nav">
-        <section id="header" class="grid-con col-span-full">
+        <section id="header" class=" full-width-grid-con grid-cosn ">
             <h2 class="hidden">Emmanuel's Portfolio Home Page</h2>
 
          <!-- Mobile Menu Icon -->
@@ -25,28 +25,47 @@
          </div>
 
         <!-- Mobile Logo -->
-        <div class="mobilie-top-logo no-use2 col-start-2 col-span-2">
+        <div class="mobilie-top-logo no-use2 col-start-2 col-span-2 m-col-start-4">
          <a href="intro.html">
              <img src="images/red-Logo.svg" alt="menu">
          </a>
       </div>
     
         <!-- Header Navigation -->
-        <div id="head-nav" class="no-use l-col-start-3 l-col-span-5 m-col-start-3 m-col-span-5">
+        <div id="head-nav" class=" mb-nav l-col-start-3 l-col-span-5 m-col-start-3 m-col-end-9">
             <ul>
                 <li><a href="#">Home</a></li>
-				<li><a href="#">Works</a>
-                    <div id="sub-menu" class="hidden">
+				<li id="work-select" class="arrow-icon"><a href="#">Works</a>
+                    <div class="sub-menu1 full-width-grid-con">
                          <ul class="">
-                             <li><a href="#">Project 1</a></li>
-                             <li><a href="#">Project 2</a></li>
-                             <li><a href="#">Project 3</a></li>
+                             <li><a href="#">Zima Rebrand</a></li>
+                             <li><a href="#">Kavorka</a></li>
+                             <li><a href="#">Trivox</a></li>
+                             <li class="no-tblet"><a href="#">Beyond This Site</a></li>
+                             
                           </ul>
                       </div>
                 </li>
 				<li><a href="#">About</a></li>
 				<li><a href="#">Contact</a></li>
+                <li class="no-tblet"><a href="#">Download CV</a></li>
+                <li><a href="#">Beyond This Site</a></li>
+                <li id="theme-select" class="arrow-icon no-tblet"><a href="#">Themes</a>
+                    <div  class="sub-menu2">
+                         <ul class="">
+                             <li><a href="#">Light</a></li>
+                             <li><a href="#">Dark</a></li>
+                          </ul>
+                      </div>
+                </li>
+                <p class="no-tblet">2024 Emmanule Opadele</p>
+
             </ul>
+        </div>
+
+          <!-- Mode switch -->
+          <div id="theme-switch" class="hidden no-use l-col-start-11 l-col-span-2 m-col-start-11 m-col-span-2">
+            <button><p>Dark Mode</p></button>
         </div>
 
         <!-- Resume button  -->
@@ -54,16 +73,8 @@
             <button><p>Download cv</p></button>
         </div>
 
-        <!-- Globe image Icon -->
-        <div class="globe-size l-col-start-10 m-col-start-10 col-start-4">
-            <a href="#">
-                <img id="globe-icon" src="images/icon-globe.svg" alt="world globe">
-            </a>
-        </div>
-        <!-- Mode switch -->
-        <div id="theme-switch" class="no-use l-col-start-11 l-col-span-2 m-col-start-11 m-col-span-2">
-            <button><p>Dark Mode</p></button>
-        </div>
+    
+      
         </section>
     </div>
     <!-- Header Section End -->
