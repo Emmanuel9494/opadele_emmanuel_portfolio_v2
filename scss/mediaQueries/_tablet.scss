@@ -191,6 +191,7 @@
       // HERO SECTION
 #hero-main{
     margin-top: 18px;
+    height: 700px;
     
    .bg-vid{
     width: 250vw;
@@ -267,4 +268,86 @@
       }
       
   }
+
+  #slide-image{
+    position: relative;
+    overflow-x: hidden;
+    width: 100vw;
+    margin-left: 20px;
+    .bg-vid{
+        width: 250vw;
+        height:155vh ;
+        margin-top:-410px;
+       }
+     #img-top-left{
+      width: 50vw;
+      height: 50vh;
+      right:1% ;
+      img{
+        object-fit:cover;
+  
+      }
+     }
+     #img-top-right{
+      width: 50vw;
+      height: 40vh;
+      right:-15% ;
+      img{
+        object-fit:cover;
+      }
+     }
+     #img-bottom-left{
+      width: 70vw;
+      height: 31vh;
+      right:1% ;
+      top: 51.6%;
+      img{
+        object-fit: cover;
+        width: 800px;
+      }
+     }
+     #img-bottom-right{
+      width: 45vw;
+      height: 40vh;
+      right:-15% ;
+      top: 40.6%;
+      img{
+        object-fit: cover;
+      }
+     }
+  }
+
+  * reels video */
+    /* Reel video section */
+#countdown-circle {
+    width: 68px;
+    height: 68px;
+    right: 45.5%;
+   margin-top: -2.1rem;
+  }
+  #countdown-text {
+   
+    font-size: 2vw;
+}
+    #play-button img{
+        width: 20px;
+        height: 20px;
+      }
+      #pause-button img{
+        width: 20px;
+        height: 20px;
+      }
+      #stop-button img{
+        width: 20px;
+        height: 20px;
+      }
+      #ctrl-left img{
+        width: 20px;
+        height: 20px;
+      }
+      #ctrl-right img{
+        width: 20px;
+        height: 20px;
+      }
+
 }

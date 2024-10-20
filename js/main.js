@@ -1,4 +1,4 @@
-// INTRO JS
+// INDEX JS
 (function () {
     // Check if the current page is 'intro.html'
     if (window.location.pathname.includes("index.html")) {

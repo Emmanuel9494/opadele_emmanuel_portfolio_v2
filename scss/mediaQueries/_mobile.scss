@@ -285,6 +285,7 @@ html, body{
 #hero-main{
   overflow-x: hidden;
   margin-top: 20px;
+  height: 550px;
   
  .bg-vid{
   opacity: .29;
@@ -296,6 +297,7 @@ html, body{
   picture{
     position: absolute;
     overflow: hidden;
+    z-index: 10;
     
     margin-top: -30vh;
   
@@ -353,6 +355,7 @@ html, body{
     top: 67%;
     left: 72%;
     cursor: pointer;
+    z-index: 12;
    
       .click-button {
         // width: 32px;
@@ -377,10 +380,206 @@ html, body{
       }
 
   }
-
-  
-
 }
-// INDEX PAGE CSS END
 
 
+#slide-image{
+  // display: flex;
+  position: relative;
+  overflow-x: hidden;
+  width: 100vw;
+  margin-left: 10px;
+  .bg-vid{
+    opacity: .29;
+    width: 250vw;
+    height:185vh ;
+    margin-top:-410px;
+   }
+   #img-top-left{
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: antiquewhite;
+    width: 50vw;
+    height: 50vh;
+    right:15% ;
+    position: absolute;
+    z-index: 5;
+    overflow: hidden;
+    img{
+      object-fit:cover;
+
+    }
+   }
+   #img-top-right{
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: antiquewhite;
+    width: 50vw;
+    height: 40vh;
+    right:1% ;
+    position: absolute;
+    z-index: 5;
+    overflow: hidden;
+    img{
+      object-fit:cover;
+    }
+   }
+   #img-bottom-left{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(133, 80, 10);
+    width: 55vw;
+    height: 29.8vh;
+    right:1% ;
+    top: 39%;
+    position: absolute;
+    z-index: 5;
+    overflow: hidden;
+    img{
+      object-fit: cover;
+      
+    }
+   }
+   #img-bottom-right{
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+    width: 45vw;
+    height: 40vh;
+    right:1% ;
+    top: 31%;
+    position: absolute;
+    z-index: 5;
+    overflow: hidden;
+    img{
+      object-fit: cover;
+    }
+   }
+}
+
+
+// VIDEO REEL
+/* Reels Section */
+#reel-box{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 5px solid a.$red;
+}
+#countdown-circle {
+  width: 38px;
+  height: 38px;
+  background-color: a.$black;
+  border-radius: 50%;
+  border: 5px solid a.$red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  right: 45%;
+  margin-top: -1.5rem;
+  
+}
+
+#countdown-text {
+  font-family: a.$bold-font;
+  font-size: 4vw;
+}
+
+
+.video-controls{
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: a.$black;
+  background-image: linear-gradient(to bottom, rgb(0,0,0,0.3), rgb(0,0,0,0.5));
+  padding: 20px;
+  display: flex;
+  filter: opacity(.8);
+  z-index: 25;
+}
+.video-controls.hide{
+  opacity: 0;
+  pointer-events: none;
+}
+#play-button, #pause-button, #stop-button{
+  padding: 0 .3rem 0 .3rem;
+}
+#full-screen{
+  padding-left:.3rem;
+}
+#volume{
+  margin-left: auto;
+  padding: 0 .3rem 0 .3rem;
+}
+.video-controls.hidden {
+display: none;
+}
+button{
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+}
+/*********** Baseline, reset styles ***********/
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 12rem;
+  padding: 0 .3rem 0 .3rem;
+}
+
+/* Removes default focus */
+input[type="range"]:focus {
+  outline: none;
+}
+
+/******** Chrome, Safari, Opera and Edge Chromium styles ********/
+/* slider track */
+input[type="range"]::-webkit-slider-runnable-track {
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  height: 0.5rem;
+}
+
+/* slider thumb */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  margin-top: -4px; /* Centers thumb on the track */
+  background-color: #c40f0f;
+  border-radius: 2.5rem;
+  height: 1rem;
+  width: 1rem;
+}
+
+input[type="range"]:focus::-webkit-slider-thumb {
+  outline: 3px solid #000000;
+  outline-offset: 0.125rem;
+}
+
+/*********** Firefox styles ***********/
+/* slider track */
+input[type="range"]::-moz-range-track {
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  height: 0.5rem;
+}
+
+/* slider thumb */
+input[type="range"]::-moz-range-thumb {
+  background-color: #000000;
+  border: none; /*Removes extra border that FF applies*/
+  border-radius: 2.5rem;
+  height: 1rem;
+  width: 1rem;
+}
+
+input[type="range"]:focus::-moz-range-thumb{
+  outline: 3px solid #bd0e0e;
+  outline-offset: 0.125rem;
+}
