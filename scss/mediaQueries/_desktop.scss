@@ -1,0 +1,190 @@
+@use "../abstracts" as a;
+
+@media screen and (min-width: 1280px) {
+    #top-nav{
+        height: 50px;
+        padding-top: 10px;
+        .container-mobile-top-logo{
+            display: none;
+        }
+        .mb-nav{
+            display: block;
+        }
+        .no-tblet{
+            display: none;
+        }
+       
+      
+        #header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            // background-color: #f5f3f3;
+            background-color: a.$black;
+            height: 10vh;
+            border-bottom: 10px solid a.$white;
+      
+        }
+        
+      
+        .mobilie-top-logo{
+            margin-left: 30px;
+            img{
+                width: 2vw;
+                // height: 9vh;
+                // margin-left: 30px;
+            }
+        }
+      
+        #cv-resume{
+            text-align: center;
+            button{
+                background-color: a.$red;
+                font-family: a.$body-font;
+                font-size: 1vw;
+                cursor: pointer;
+                color: a.$white;
+                height: 25px;
+                text-transform: uppercase;
+                text-align: center;
+                border: 1px solid a.$white; 
+                position: relative;
+                overflow: hidden; 
+                background: linear-gradient(to left, a.$red 50%, a.$black 50%);
+                background-size: 200% 100%; 
+                background-position: 100% bottom; 
+                transition: background-position 0.5s ease-in-out; 
+      
+            }
+            button:hover{
+                background-position: 100% bottom;
+                border: 1px solid a.$white; 
+                transition: border 1s ease-in-out, background-position 0.5s ease-in-out;
+                background: linear-gradient(to right, a.$red 50%, a.$black 50%);
+                background-size: 200% 100%;  
+      
+            }
+        }
+        #head-nav{
+           
+            position: relative;
+            width: 45vw;
+            // height: 60vh;
+            background-color: transparent;
+            // background-color: rgb(25, 193, 193);
+            filter: blur(70);
+            left:0;
+            z-index: 1;
+            top:0;
+            
+            a{
+                text-decoration: none;
+                color: a.$white;
+                font-family: a.$body-font;
+                font-size: 1.5vw;
+                padding-bottom: 10px;
+            }
+            .arrow-icon > a::after{
+                content: '';
+                position: absolute;
+                width: 12px; 
+                height: 12px;
+                background-image: url('../images/arrow-right.svg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin-top: 1vw;
+                margin-left: 3px;
+                rotate: 90deg;
+      
+            }
+            
+            ul{
+                display: flex;
+                list-style: none;
+                padding-top: 10px;
+                justify-content: space-between;
+                align-self: center;
+                // margin-left: -8vw;
+            }
+            ul li{
+                padding-bottom: 5px;
+                padding-top: 5px;
+                margin-right: 25px;
+                border-top: .1px solid var(--red-color);  
+                :hover{
+                    color: a.$red; 
+                    transition: color .5s ease-in-out;
+                     
+                  }
+               
+            }
+          
+            #work-select{
+                position: relative;
+                
+                
+            
+                ul{
+                    display: block;
+                }
+                .sub-menu1.show{
+                    position: absolute;
+                    background-color: rgb(0, 0, 0);
+                    width: 100.4vw;
+                    margin-left: -390px;
+                    // margin-top:2.6vw;
+                    opacity: 1;
+                    transition: opacity 5s ease-in-out;
+                    overflow-x: hidden;
+                    
+                }
+            }
+            p{
+                text-align: center;
+                margin-top: 5vh;
+                text-decoration: none;
+                font-family: a.$body-font;
+                font-size: 5vw;
+                margin-bottom: 5vh;
+                margin-left:-19vw;
+                
+            }
+        }
+        .sub-menu1, .sub-menu2{
+            display: none;
+        }
+        .sub-menu1.show{
+            // display: flex;
+            margin-left: -10vw;
+            border: none;
+            opacity: 1;
+            transition: opacity 5s ease-in-out;
+           
+        }
+        .sub-menu2.show{
+            display: block;
+            margin-left: 1vw;
+            opacity: 1;
+            transition: opacity 5s ease-in-out;
+        }
+        .sub-menu1 ul li{
+            padding-bottom: 5px;
+            padding-top: 5px;
+            margin-bottom: 25px;
+            border-top: 1px solid a.$red;  
+        }
+        .sub-menu1 ul {
+            padding-left: 450px;
+            padding-bottom: 20px;
+          
+            
+        }
+        .sub-menu1 ul li:hover{
+            color: a.$red;
+            transition: color 3s ease-in-out;
+        }
+       
+        
+      } 
+  
+}
