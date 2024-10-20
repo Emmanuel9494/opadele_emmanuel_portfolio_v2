@@ -2,8 +2,12 @@
 
 @media screen and (min-width: 768px) {
     #top-nav{
+        
         height: 50px;
-        padding-top: 10px;
+        // padding-top: 10px;
+        // padding-top: 10px;
+  background-color: a.$black;
+        
         .container-mobile-top-logo{
             display: none;
         }
@@ -34,6 +38,8 @@
             background-color: a.$black;
             height: 9vh;
             border-bottom: 10px solid a.$white;
+            position: fixed;
+            width: 100vw;
       
         }
         
@@ -181,4 +187,84 @@
        
         
       } 
+
+      // HERO SECTION
+#hero-main{
+    margin-top: 18px;
+    
+   .bg-vid{
+    width: 250vw;
+    height:155vh ;
+    margin-top:-410px;
+   }
+    
+    picture{
+      position: absolute;
+      overflow: hidden;
+      margin-top: -20vh;
+      img{
+        width: 97vw;
+        height: 115vh;
+      }
+    }
+    // intro-text
+    #intro-text{
+      text-align: left;
+      height: 100vh;
+      overflow: hidden;
+      margin-left: 28vw;
+      margin-top: 1vh;
+      position: absolute;
+      z-index: 4;
+      justify-content: center;
+      align-content: center;
+    
+      #intro-names{
+        display: flex;
+      text-align: left;
+      
+          h2{
+              font-family: a.$bold-font;
+              font-size: 4vw;
+              text-transform: uppercase;
+              letter-spacing: 1px;
+              margin-right: 10px;
+          }
+         
+     }
+     h3{
+      color: a.$red;
+      font-family: a.$body-font;
+      font-size: 3vw;
+      text-transform: uppercase;
+      padding-top: 10px;
+      
+      }
+       .intro-bio{
+        width: 60vw;
+       }
+       p{
+        font-family: a.$body-font;
+        margin-top: 1vh;
+        letter-spacing: .5px;
+       }
+    }
+    .cta-work{
+        top: 65%;
+        left: 74%;
+       
+          .click-button {
+            // width: 32px;
+            height: 4vh;
+            font-size: 3vw;
+            cursor: pointer;
+            color: a.$white;
+            // height: 35px;
+            border: 2px solid a.$white; 
+            background-color: a.$red;
+            }
+           
+      }
+      
+  }
 }
