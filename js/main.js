@@ -1,7 +1,7 @@
 // INTRO JS
 (function () {
     // Check if the current page is 'intro.html'
-    if (window.location.pathname.includes("intro.html")) {
+    if (window.location.pathname.includes("index.html")) {
 
         console.log("JAVA SCRIPT RUNNING!");
         
@@ -12,8 +12,7 @@
         const skillPath = ["Developer_", "Designer_"];
         let cursor = gsap.to('.blinkCursor', {opacity: 0, ease:"power2.inOut", repeat:-1});
         cursor;
-        let cursors = gsap.to('#cta-blink', {opacity: .8, ease:"power2.inOut", repeat:-1, repeatDelay:.5});
-        cursors;
+        
 
         let textEdit = gsap.timeline({repeat: -1});
         skillPath.forEach(skillPath => {
@@ -33,7 +32,7 @@
             console.log("Background Speed Slow Mo");
             
         }
-            videoSpeed(bgVideo, 0.5);
+            videoSpeed(bgVideo, 0.3);
        
 
 

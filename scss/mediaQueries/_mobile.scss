@@ -94,17 +94,6 @@ html, body{
       font-size: 5vw;
       text-transform: uppercase;
       padding-top: 10px;
-      @media screen and (min-width: 768px) {
-          position: absolute;
-          font-size: 3vw;
-          top:51%;
-          right:40%;
-      }
-      @media screen and (min-width: 1280px) {
-          font-size: 2vw;
-          top:53%;
-          right:45%;
-      }
       }
 
      #intro-click{
@@ -135,7 +124,8 @@ html, body{
 // HEADER SECTION
 #top-nav{
   height: 70px;
-  padding-top: 10px;
+  // padding-top: 10px;
+  background-color: a.$black;
 
  
  
@@ -148,6 +138,9 @@ html, body{
       background-color: a.$black;
       height: 12vh;
       border-bottom: 10px solid a.$white;
+      position: fixed;
+      width: 100vw;
+      z-index: 9999;
 
   }
   
@@ -211,9 +204,9 @@ html, body{
       background-color: a.$black;
       // background-color: rgb(1, 35, 35);
       filter: blur(70);
-      left:10%;
+      left:0;
       z-index: -1;
-      top:12%;
+      top:90%;
       
       a{
           text-decoration: none;
@@ -245,7 +238,7 @@ html, body{
           padding-bottom: 5px;
           padding-top: 5px;
           margin-bottom: 15px;
-          border-top: .1px solid var(--red-color);  
+          border-top: .1px solid a.$red;  
       }
       p{
           text-align: center;
@@ -286,4 +279,108 @@ html, body{
   }
   
 }
+
+
+// HERO SECTION
+#hero-main{
+  overflow-x: hidden;
+  margin-top: 20px;
+  
+ .bg-vid{
+  opacity: .29;
+  width: 250vw;
+  height:185vh ;
+  margin-top:-410px;
+ }
+  
+  picture{
+    position: absolute;
+    overflow: hidden;
+    
+    margin-top: -30vh;
+  
+    img{
+      width: 97vw;
+      height: 135vh;
+    }
+  }
+  // intro-text
+  #intro-text{
+    text-align: left;
+    // width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    margin-left: 30vw;
+    margin-top: -2vh;
+    // display: grid;
+    position: absolute;
+    z-index: 4;
+    justify-content: center;
+    align-content: center;
+    top: 0;
+    
+
+    #intro-names{
+    text-align: left;
+    
+        h2{
+            font-family: a.$bold-font;
+            font-size: 6vw;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+       
+   }
+   h3{
+    color: a.$red;
+    font-family: a.$body-font;
+    font-size: 5vw;
+    text-transform: uppercase;
+    padding-top: 10px;
+    
+    }
+     .intro-bio{
+      width: 60vw;
+     }
+     p{
+      font-family: a.$body-font;
+      margin-top: 1vh;
+      letter-spacing: .5px;
+     }
+  }
+  .cta-work{
+    position: absolute;
+    top: 67%;
+    left: 72%;
+    cursor: pointer;
+   
+      .click-button {
+        // width: 32px;
+        height: 4vh;
+        font-size: 3.2vw;
+        cursor: pointer;
+        color: a.$white;
+        // height: 35px;
+        border: 2px solid a.$white; 
+        background: linear-gradient(to left, a.$red 50%, a.$black 50%);
+          background-size: 200% 100%; 
+          background-position: 100% bottom; 
+          transition: background-position 0.5s ease-in-out; 
+        }
+        .click-button:hover{
+          background-position: 100% bottom;
+          border: 1px solid a.$white; 
+          transition: border 1s ease-in-out, background-position 0.5s ease-in-out;
+          background: linear-gradient(to right, a.$red 50%, a.$black 50%);
+          background-size: 200% 100%;  
+
+      }
+
+  }
+
+  
+
+}
 // INDEX PAGE CSS END
+
+
