@@ -32,7 +32,7 @@
             console.log("Background Speed Slow Mo");
             
         }
-            videoSpeed(bgVideo, 0.3);
+            videoSpeed(bgVideo, 1.19);
        
 
 
